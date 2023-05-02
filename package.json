@@ -1,0 +1,31 @@
+{
+  "name": "secure-pass-generator",
+  "version": "1.0.0",
+  "description": "Secure-pass-generator is a powerful and easy-to-use JavaScript library that generates secure passwords with customizable options. With its intuitive interface, you can quickly create complex passwords that meet your security needs. Whether you're a developer looking to add password generation to your app or a user who needs a strong password for online security, Secure-pass-generator has got you covered.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rifaturrana/Secure-pass-generator.git"
+  },
+  "keywords": [
+    "secure",
+    "password",
+    "generator",
+    "node.js",
+    "library",
+    "encryption",
+    "random",
+    "password-generator",
+    "password-generator-js"
+
+  ],
+  "author": "Rifatur Rana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rifaturrana/Secure-pass-generator/issues"
+  },
+  "homepage": "https://github.com/rifaturrana/Secure-pass-generator#readme"
+}
