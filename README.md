@@ -51,6 +51,25 @@ symbols (boolean): Whether to include symbols in the password (default is true).
 uppercase (boolean): Whether to include uppercase letters in the password (default is true). <br />
 excludeSimilarCharacters (boolean): Whether to exclude similar characters (e.g. i, l, 1, L, o, 0) to avoid confusion (default is true).
 
+## Password Strength Indicator
+
+secure-pass-generator now includes a <b>password strength indicator</b> to help you determine the strength of your generated password. The function checkPasswordStrength takes a password as input and returns a string indicating the strength of the password. Here are the possible output strings:
+
+Weak: The password is weak. It must contain at least one lowercase letter, one digit, and have a minimum length of 6. <br/>
+Medium: The password is medium strength. It must contain at least one lowercase letter, one uppercase letter, one digit, and have a minimum length of 8.  <br/>
+Strong: The password is strong. It must contain at least one lowercase letter, one uppercase letter, one digit, one special character, and have a minimum length of 12.  <br/>
+Here's an example of how to use checkPasswordStrength:
+```console
+const { checkPasswordStrength } = require('secure-pass-generator');
+
+const password = 'P@ssw0rd!123';
+const strength = checkPasswordStrength(password);
+console.log(strength);
+```
+This will output:
+```console
+Strong: Password meets all criteria for a strong password.
+```
 
 ## License
 Secure-pass-generator is licensed under the MIT License. See LICENSE for more information.
